@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:weightSum="4"
+    >
+    <LinearLayout
+        android:id="@+id/Google_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="매장사진"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="매장사진"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/Map_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detailmaps"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.29"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Before &amp; After"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        >
+
+        <!-- 이미지 선택 버튼 -->
+        <Button
+            android:id="@+id/btn_SelectImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="이미지 선택" />
+
+        <!-- 이미지 추가 버튼 -->
+<!--        <Button-->
+<!--            android:id="@+id/btn_AddImages"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+
+<!--            android:text="갤러리에 이미지 추가" />-->
+
+        <!-- 이미지를 보여줄 TableLayout -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Submain_Put"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.22"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/Submain_Maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="지도"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/Submain_Cal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="예약"
+            android:textSize="21dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/reviewText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="후기"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btn_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="사진"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/Submain_Infor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="전체"
+            android:textSize="21dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

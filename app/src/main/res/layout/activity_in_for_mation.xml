@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/all_My"
+    android:weightSum="3"
+    android:layout_marginTop="40dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/Myinformation_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/cardview_light_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="내이름" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="74dp"
+            android:ems="10"
+            android:hint="차량정보"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="71dp"
+            android:ems="10"
+            android:hint="핸드폰번호"
+            android:inputType="text" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:id="@+id/Information_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0, 1, 2"
+            android:shrinkColumns="*"
+            android:weightSum="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/Infor_table1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    />
+                <Button
+                    android:id="@+id/Infor_Review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="후기"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    />
+                <Button
+                    android:id="@+id/Infor_table3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예약현황"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:id="@+id/toInfor_tble"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/toInfor_tble1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보를 입력하세요"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:id="@+id/toInfor_tble2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보를 입력하세요"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:id="@+id/toInfor_tble3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보를 입력하세요"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:id="@+id/threeInfor_tble"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/threeInfor_tble1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보를 입력하세요"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    />
+                <Button
+                    android:id="@+id/threeInfor_tble2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보를 입력하세요"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    />
+                <Button
+                    android:id="@+id/threeInfor_tble3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보를 입력하세요"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="30dp">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
