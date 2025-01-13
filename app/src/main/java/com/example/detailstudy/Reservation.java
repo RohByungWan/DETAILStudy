@@ -26,7 +26,7 @@ public class Reservation extends AppCompatActivity {
 
     private CalendarView calendarView;
     private Spinner timeSpinner;
-    private CheckBox checkBoxOption1, checkBoxOption2, Moning1, ToSsan1 ;
+    private CheckBox checkBoxOption1, checkBoxOption2, Moning1, ToSsan1, Box1, Box2, Box3, Box4 ;
     private Button buttonReserve, btn_day, btn_Time;
     private TextView textViewResult;
     private RadioGroup Group1,Group2;
@@ -53,6 +53,10 @@ public class Reservation extends AppCompatActivity {
         ToSsan1 = findViewById(R.id.ToSsan1);
         Button btn_day = findViewById(R.id.btn_day);
         Button btn_Time = findViewById(R.id.btn_Time);
+        Box1 = findViewById(R.id.Box1);
+        Box2 = findViewById(R.id.Box2);
+        Box3 = findViewById(R.id.Box3);
+        Box4 = findViewById(R.id.Box4);
 
         // 초기값 설정
         selectedDate = null;
@@ -111,6 +115,7 @@ public class Reservation extends AppCompatActivity {
 
 
 
+
         // 시간대 설정
         ArrayList<String> timeSlots = new ArrayList<>();
         for (int i = 10; i <= 18; i++) {
@@ -138,6 +143,7 @@ public class Reservation extends AppCompatActivity {
             }
         });
 
+
         // 예약 버튼 클릭 리스너
         buttonReserve.setOnClickListener(v -> {
             if (selectedDate == null) {
@@ -152,11 +158,11 @@ public class Reservation extends AppCompatActivity {
 
             boolean isOption1Checked = checkBoxOption1.isChecked();
             boolean isOption2Checked = checkBoxOption2.isChecked();
-            boolean isOption3Checked = Moning1.isChecked();
-            boolean isOption4Checked = ToSsan1.isChecked();
+            boolean isOption3Checked = Box1.isChecked();
+            boolean isOption4Checked = Box2.isChecked();
 
 
-            if (!isOption1Checked && !isOption2Checked && !isOption3Checked && !isOption4Checked) {
+            if (!isOption1Checked && !isOption2Checked ) {
                 Toast.makeText(this, "최소 하나의 옵션을 선택하세요.", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -166,8 +172,12 @@ public class Reservation extends AppCompatActivity {
             result.append("예약 날짜: ").append(selectedDate).append("\n");
             result.append("예약 시간: ").append(selectedTime).append("\n");
             result.append("예약 종류: ");
-            if (isOption1Checked) result.append("기아자동차");
-            if (isOption2Checked) result.append("현대자동차");
+            if (isOption1Checked) result.append("기아자동차").append("\n");
+            if (isOption2Checked) result.append("현대자동차").append("\n");
+            result.append("예약 종류: ");
+            if (isOption3Checked) result.append("현대").append("\n");
+            if (isOption4Checked) result.append("싼타페").append("\n");
+
 
             textViewResult.setText(result.toString());
             Toast.makeText(this, "예약이 완료되었습니다.", Toast.LENGTH_SHORT).show();
