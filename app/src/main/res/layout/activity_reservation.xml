@@ -99,7 +99,8 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:visibility="gone">
-            <RadioButton
+            <CheckBox
+                android:id="@+id/Box1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="현대" />
@@ -108,15 +109,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="투싼" />
-            <RadioButton
+            <CheckBox
+                android:id="@+id/Box2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="싼타페" />
-            <RadioButton
+            <CheckBox
+                android:id="@+id/Box3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="기아" />
-            <RadioButton
+            <CheckBox
+                android:id="@+id/Box4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="제네시스" />

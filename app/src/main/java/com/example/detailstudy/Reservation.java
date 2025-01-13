@@ -51,8 +51,8 @@ public class Reservation extends AppCompatActivity {
         Group2 = findViewById(R.id.Group2);
         Moning1 = findViewById(R.id.Moning1);
         ToSsan1 = findViewById(R.id.ToSsan1);
-        Button btn_day = findViewById(R.id.btn_day);
-        Button btn_Time = findViewById(R.id.btn_Time);
+        btn_day = findViewById(R.id.btn_day);
+        btn_Time = findViewById(R.id.btn_Time);
         Box1 = findViewById(R.id.Box1);
         Box2 = findViewById(R.id.Box2);
         Box3 = findViewById(R.id.Box3);
@@ -73,6 +73,7 @@ public class Reservation extends AppCompatActivity {
                 }
             }
         });
+
         btn_Time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,9 +113,6 @@ public class Reservation extends AppCompatActivity {
                 }
             }
         });
-
-
-
 
         // 시간대 설정
         ArrayList<String> timeSlots = new ArrayList<>();
