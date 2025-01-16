@@ -38,7 +38,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             // Glide로 이미지를 로드하여 ImageView에 표시
             Glide.with(context)
                     .load(imageUris.get(position))
-                    .override(500, 500) // 원하는 크기 (500x500px)로 조정
+                    .override(250, 250) // 원하는 크기 (500x500px)로 조정
                     .centerCrop()  // 이미지 자르기
                     .into(holder.imageView);
         }

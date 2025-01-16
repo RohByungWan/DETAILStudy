@@ -23,12 +23,14 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
     }
 
     @NonNull
+    //RecyclerView 샘명주기 onCreateViewHolder 통해서 View가 생성된다.
     @Override
     public ReviewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
         return new ReviewViewHolder(view);
     }
 
+    //onBindViewHolder 를 통해서 값을 반영하는 코드
     @Override
     public void onBindViewHolder(@NonNull ReviewViewHolder holder, int position) {
         holder.tvReview.setText(reviews.get(position));

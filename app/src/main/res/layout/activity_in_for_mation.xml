@@ -25,7 +25,7 @@
             />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/et_Inforemail"
             android:layout_width="86dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
