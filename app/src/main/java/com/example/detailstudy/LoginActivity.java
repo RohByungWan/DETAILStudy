@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText mEtEmail, mEtPwd, et_email;
 
     private String str;
+    private Object view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,12 @@ public class LoginActivity extends AppCompatActivity {
         mEtPwd = findViewById(R.id.et_pwd);
 
 
+//        public void onClick(View view) {
+//            Intent intent = new Intent(LoginActivity.this, InForMation.class);
+//            intent.putExtra("입력한 Email", strEmail);
+//            startActivity(intent);
+//        }
+
 
         Button btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +57,15 @@ public class LoginActivity extends AppCompatActivity {
                 // 로그인 요청
                 String strEmail = mEtEmail.getText().toString();
                 String strPwd = mEtPwd.getText().toString();
+
+//                로그인에 사용되는 Eamil을 InForMation class에 보내는 방법 찾기
+
+//                EditText editText = (EditText) findViewById(R.id.et_email);
+//                String id = editText.getText().toString();
+//
+//                Intent intent = new Intent(LoginActivity.this, InForMation.class);
+//                intent.putExtra("입력한 Email", strEmail);
+//                startActivity(intent);
 
 
                 mFirebaseAuth.signInWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {

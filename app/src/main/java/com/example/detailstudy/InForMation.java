@@ -51,8 +51,14 @@ public class InForMation extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDtatabase = FirebaseDatabase.getInstance().getReference().getDatabase();
 
+// 로그인 한 Email 데이터를 가지고 오는거 구글링 chatGPT 확인 해서 코드 알아 볼 것
 
-
+//        {
+//                Intent intent = getIntent();
+//                String id = intent.getStringExtra("입력한 Email");
+//
+//            }
+//        };
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         Button Infor_Review = findViewById(R.id.Infor_Review);
